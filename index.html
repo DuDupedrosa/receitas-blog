@@ -21,8 +21,8 @@
 
   <!-- links -->
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./css/style.min.css" as="style">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -33,7 +33,15 @@
       </div>
       <nav aria-label="Navegação primária">
         <ul class="header-nav">
+          <li class="nav-revenues" data-dropdown>
+            <a class="color-1 family-2 size-5 nav-revenues-link" href="#revenue">Receitas</a>
+            <ul class="nav-intern-revenues" data-dropdown="links">
+              <li><a class="color-1 family-2 size-4" href="#candy">Doces</a></li>
+              <li><a class="color-1 family-2 size-4" href="#savory">Salgadas</a></li>
+            </ul>
+          </li>
           <li><a class="color-1 family-2 size-5" href="./contato.html">Dúvidas</a></li>
+          <li><a class="color-1 family-2 size-5" href="#collaborate">Colaborador</a></li>
         </ul>
       </nav>
     </div>
@@ -48,11 +56,11 @@
     </div>
   </div>
 
-  <div class="title-home container">
+  <div class="title-home container" id="revenue">
     <h1 class="size-8 family-2 color-2">Conheça nossas receitas<span class="color-4">.</span></h1>
   </div>
 
-  <article class="container candy-bg" aria-labelledby="candy">
+  <article class="container candy-bg" aria-labelledby="candy" id="candy">
     <h2 id="candy" class="size-8 color-2 family-2 transform-cap">Receitas doces</h2>
     <div class="revenue-mb">
       <!--revenue-mb para a flutuação no estilo de mobile-->
@@ -83,7 +91,7 @@
     </div>
   </article>
 
-  <article class="container savory-bg" aria-labelledby="savory">
+  <article class="container savory-bg" aria-labelledby="savory" id="savory">
     <h2 id="savory" class="size-8 color-2 family-2 transform-cap">Receitas salgadas</h2>
     <div class="revenue-mb">
       <!--revenue-mg para a flutuação no estilo de mobile-->
@@ -115,7 +123,7 @@
     </div>
   </article>
 
-  <section class="background-2 pg-120 revenue-bg" aria-label="Vire um colaborador">
+  <section class="background-2 pg-120 revenue-bg" aria-label="Vire um colaborador" id="collaborate">
     <div class="container revenue">
       <div class="call-revenue-img">
         <img src="./img/receitas.jpg" alt="" width="1320" height="2580">
@@ -153,6 +161,7 @@
       <p class="family-3 color-6 size-2 direitos">ReceitasBlog &copy; alguns direitos reservados</p>
     </div>
   </footer>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
