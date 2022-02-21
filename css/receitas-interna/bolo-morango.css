@@ -1,0 +1,8 @@
+.ingredient-img-morango {
+  display: none;
+}
+
+.recheio-morango,
+.cobertura-morango {
+  color: var(--color-4);
+}

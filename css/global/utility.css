@@ -1,0 +1,153 @@
+.container {
+  max-width: 75rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn > a {
+  padding: 1.125rem 2rem;
+  max-width: max-content;
+  background: linear-gradient(180deg, #023e8a 0%, #0077b6 100%);
+  color: var(--color-1);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--family-2);
+  letter-spacing: 0.1rem;
+  border-radius: 4px;
+}
+
+.btn > a:hover {
+  background: linear-gradient(180deg, #ffb700 0%, #ffea00 100%);
+}
+
+.btn > a:focus {
+  outline: none;
+  border: 2px solid var(--color-5);
+}
+
+.style-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3.75rem;
+}
+
+.transform {
+  text-transform: uppercase;
+}
+
+.transform-cap {
+  text-transform: capitalize;
+}
+
+.transform-low {
+  text-transform: lowercase;
+}
+
+/* family-fonts*/
+.family-1 {
+  font-family: var(--family-1) /*Fira sans*/;
+}
+
+.family-2 {
+  font-family: var(--family-2) /*Poppins*/;
+}
+
+.family-3 {
+  font-family: var(--family-3) /*Roboto*/;
+}
+
+/* sizes */
+
+.size-1 {
+  font-size: var(--size-1) /*16px*/;
+}
+
+.size-2 {
+  font-size: var(--size-2) /*18px*/;
+}
+
+.size-3 {
+  font-size: var(--size-3) /*20px*/;
+}
+
+.size-4 {
+  font-size: var(--size-4) /*24px*/;
+}
+
+.size-5 {
+  font-size: var(--size-5) /*32px*/;
+}
+
+.size-6 {
+  font-size: var(--size-6) /*36px*/;
+}
+
+.size-7 {
+  font-size: var(--size-7) /*48px*/;
+}
+
+.size-8 {
+  font-size: var(--size-8) /*64px*/;
+}
+
+/*background*/
+
+.background-1 {
+  background: var(--background-1); /*#0077b6*/
+}
+
+.background-2 {
+  background: var(--background-2); /*#48cae4*/
+}
+
+.background-3 {
+  background: var(--background-3); /*#f7f7f7*/
+}
+
+.background-4 {
+  background: var(--background-4); /*#f2f2f2*/
+}
+
+.background-5 {
+  background: var(--background-5); /*#ffffff*/
+}
+
+/* colors */
+
+.color-1 {
+  color: var(--color-1); /*#ffffff*/
+}
+
+.color-2 {
+  color: var(--color-2); /*#000000*/
+}
+
+.color-3 {
+  color: var(--color-3); /*#111111*/
+}
+
+.color-4 {
+  color: var(--color-4); /*#0077b6*/
+}
+
+.color-5 {
+  color: var(--color-5); /*#ffdd00*/
+}
+
+.color-6 {
+  color: var(--color-6); /*#f2f2f2*/
+}
+
+.color-7 {
+  color: var(--color-7); /*#b2b2b2*/
+}
+
+.mg-120 {
+  margin-bottom: 120px;
+}
+
+.pg-120 {
+  padding-bottom: 120px;
+}

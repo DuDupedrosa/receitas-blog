@@ -1,0 +1,29 @@
+.introduction div > span {
+  display: block;
+  text-align: center;
+  margin-bottom: 3.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.title-home h1 {
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 37.5rem) {
+  .introduction div > span {
+    font-size: var(--size-7);
+    margin-bottom: 2.5rem;
+  }
+
+  .title-home h1 {
+    font-size: var(--size-7);
+  }
+}
+
+@media (max-width: 25rem) {
+  .introduction div > span {
+    font-size: var(--size-6);
+  }
+}

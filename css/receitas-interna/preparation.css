@@ -1,0 +1,49 @@
+.preparation {
+  margin-bottom: 7.5rem;
+}
+
+.preparation-itens {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3.75rem;
+}
+
+.preparation-itens li {
+  line-height: 1.5;
+}
+
+.preparation-itens li p > span {
+  margin-right: 0.5rem;
+  font-size: var(--size-5);
+}
+
+.preparation-images {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 37.5rem) {
+  .preparation h2 {
+    font-size: var(--size-7);
+    margin-bottom: 2.5rem;
+  }
+
+  .preparation-itens li p {
+    font-size: var(--size-3);
+  }
+
+  .preparation-itens li p > span {
+    margin-right: 0.5rem;
+    font-size: var(--size-4);
+  }
+
+  .preparation-images > div:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 25rem) {
+  .preparation h2 {
+    font-size: var(--size-6);
+  }
+}

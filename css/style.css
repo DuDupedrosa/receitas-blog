@@ -1,0 +1,24 @@
+/* Css geral*/
+@import url(./global/reset.css);
+@import url(./global/variables.css);
+@import url(./global/utility.css);
+
+/*estilos gerais */
+@import url(./global/header.css);
+@import url(./global/footer.css);
+@import url(./global/intro.css);
+@import url(./global/call.css);
+
+/*home*/
+@import url(./home/receitas.css);
+@import url(./home/intro-home.css);
+
+/*receitas-internas*/
+@import url(./receitas-interna/ingredient.css);
+@import url(./receitas-interna/preparation.css);
+@import url(./receitas-interna/tips.css);
+@import url(./receitas-interna/bolo-morango.css);
+@import url(./receitas-interna/empadao.css);
+
+/*contato*/
+@import url(./contato/contato.css);

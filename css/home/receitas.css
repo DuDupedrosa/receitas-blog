@@ -1,0 +1,133 @@
+.candy-bg {
+  margin-top: 12.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.savory-bg {
+  margin-bottom: 7.5rem;
+}
+
+.candy-bg > div > div + div,
+.savory-bg > div > div + div {
+  margin-top: 2.5rem;
+}
+
+.revenue-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.5rem;
+}
+
+#candy,
+#savory {
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+#candy::after,
+#savory::after {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.25rem;
+  background: var(--background-1);
+}
+
+.revenue-itens-content {
+  align-self: center;
+}
+
+.revenue-itens-content > h3 {
+  font-weight: 600;
+  margin-bottom: 2.25rem;
+  white-space: normal;
+}
+
+.revenue-itens-content > h3::after {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.25rem;
+  background: var(--background-1);
+}
+
+.revenue-itens-content > p {
+  line-height: 1.5;
+  max-width: 27.875rem;
+  margin-bottom: 2rem;
+}
+
+.revenue-itens-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 50rem) {
+  .revenue-itens-content > h3 {
+    white-space: nowrap;
+  }
+
+  .revenue-itens {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .revenue-mb {
+    display: flex;
+    gap: 1.875rem;
+  }
+
+  .revenue-itens-img {
+    margin-bottom: 1.25rem;
+  }
+
+  .revenue-itens-img img {
+    min-width: 18.75rem;
+  }
+
+  .revenue-mb {
+    overflow-x: scroll;
+    padding-bottom: 2.5rem;
+  }
+
+  .candy-bg > div > div + div,
+  .savory-bg > div > div + div {
+    margin-top: 0;
+  }
+
+  #candy,
+  #savory {
+    font-size: var(--size-7);
+  }
+
+  .revenue-itens-content > h3 {
+    font-size: var(--size-6);
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .candy-bg {
+    margin-top: 7.5rem;
+  }
+}
+
+@media (max-width: 23.375rem) {
+  .revenue-mb {
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+
+  .revenue-mb {
+    overflow-x: initial;
+  }
+
+  .revenue-itens-img img {
+    min-width: initial;
+  }
+
+  .revenue-itens-content > h3 {
+    white-space: initial;
+  }
+}

@@ -1,0 +1,35 @@
+:root {
+  /* family-fonts */
+  --family-1: "Fira Sans", sans-serif;
+  --family-2: "Poppins", sans-serif;
+  --family-3: "Roboto", sans-serif;
+
+  /* size-typography */
+  --size-1: 1rem; /*16px*/
+  --size-2: 1.125rem; /*18px*/
+  --size-3: 1.25rem; /*20px*/
+  --size-4: 1.5rem; /*24px*/
+  --size-5: 2rem; /*32px*/
+  --size-6: 2.25rem; /*36px*/
+  --size-7: 3rem; /*48px*/
+  --size-8: 4rem; /*64px*/
+
+  /* colors */
+
+  /* background */
+  --background-1: #0077b6;
+  --background-2: #48cae4;
+  --background-3: #f7f7f7;
+  --background-4: #f2f2f2;
+  --background-5: #ffffff;
+  --background-6: #ffdd00;
+
+  /* colors-texts */
+  --color-1: #ffffff;
+  --color-2: #000000;
+  --color-3: #111111;
+  --color-4: #0077b6;
+  --color-5: #ffdd00;
+  --color-6: #f2f2f2;
+  --color-7: #b2b2b2;
+}

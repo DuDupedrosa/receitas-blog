@@ -1,0 +1,57 @@
+.tips {
+  margin-bottom: 7.5rem;
+}
+
+.tips > div {
+  padding: 3.75rem 0;
+}
+
+.tips > div:nth-child(even) {
+  background: var(--background-4);
+}
+
+.tips div div p::before {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.5rem;
+  background: var(--background-1);
+}
+
+.tips div div p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tips-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tips-content img {
+  transition: 0.2s;
+  margin-left: 1.25rem;
+}
+
+.tips-content img:hover {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 50rem) {
+  .tips-content img {
+    display: none;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .tips h2 {
+    font-size: var(--size-7);
+    margin-bottom: 2.5rem;
+  }
+
+  .tips div div p::before {
+    display: none;
+  }
+}
