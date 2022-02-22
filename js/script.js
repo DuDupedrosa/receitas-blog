@@ -1,7 +1,4 @@
 import DropdownMenu from "./dropdown-menu.js";
 
-const dropdownMenu = new DropdownMenu(
-  "[data-dropdown]",
-  '[data-dropdown="links"]'
-);
-dropdownMenu.init();
+const dropdown = new DropdownMenu("[data-dropdown]", "active");
+dropdown.init();

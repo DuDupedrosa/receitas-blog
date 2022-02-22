@@ -41,7 +41,7 @@
 }
 
 [data-dropdown]:hover .nav-intern-revenues,
-.nav-intern-revenues.active {
+[data-dropdown].active .nav-intern-revenues {
   display: initial;
   animation: show-dropdown 0.3s forwards;
 }
