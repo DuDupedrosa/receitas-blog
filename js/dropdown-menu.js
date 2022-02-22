@@ -6,6 +6,7 @@ export default class DropdownMenu {
   constructor(listElement, classe) {
     this.listElement = document.querySelector(listElement);
     this.classe = classe;
+    this.events = ["touchstart", "click"];
 
     // damos o bind para redirecionar o this
     // para fazer referencia para todo o
@@ -30,7 +31,9 @@ export default class DropdownMenu {
   // method que add o event de click no link pai
   // que a lista que segura todo o dropdown
   addEventDropdown() {
-    this.listElement.addEventListener("click", this.onShowDropdown);
+    this.events.forEach((event) => {
+      this.listElement.addEventListener(event, this.onShowDropdown);
+    });
   }
 
   // method que inicia toda a classe
