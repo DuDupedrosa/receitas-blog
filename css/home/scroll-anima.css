@@ -1,0 +1,10 @@
+[data-anima="scroll"] {
+  opacity: 0;
+  transform: translate3d(-40px, 0, 0);
+  transition: 0.3s;
+}
+
+[data-anima="scroll"].active-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
