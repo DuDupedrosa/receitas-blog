@@ -1,3 +1,9 @@
+/* tirando o link que leva até a home pois ele só sera
+ativado quando iniciar o menu mobile */
+.link-home-responsive {
+  display: none;
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -45,5 +51,25 @@
     background-color: var(--background-2);
     border-radius: 0.25rem;
     font-size: 1.25rem;
+  }
+}
+
+/* estilos específicos para o header da home
+por conta da maior navegação da home
+teve que ser feito ajustes específicos para o header
+da home */
+@media (min-width: 50.0625rem) and (max-width: 67.5rem) {
+  .header-content-specif {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .header-content-specif .header-img {
+    margin-bottom: 2.5rem;
+  }
+
+  .header-content-specif .header-nav li {
+    background-color: var(--background-8);
+    border-radius: 0.25rem;
   }
 }

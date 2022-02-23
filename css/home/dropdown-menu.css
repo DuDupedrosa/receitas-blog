@@ -28,7 +28,6 @@
 }
 
 /* interaction with styles of JavaScript */
-
 @keyframes show-dropdown {
   from {
     opacity: 0;
@@ -44,4 +43,20 @@
 [data-dropdown].active .nav-intern-revenues {
   display: initial;
   animation: show-dropdown 0.3s forwards;
+}
+
+/* estilos específicos para o header da home 
+fazendo as devidas alterações nas cores para 
+entrar em contraste com o menu mobile */
+@media (min-width: 50rem) and (max-width: 67.5rem) {
+  .nav-intern-revenues li {
+    background-color: var(--background-2) !important;
+  }
+
+  .nav-intern-revenues {
+    background-color: var(--background-2) !important;
+    top: 95px;
+    left: 4px;
+    padding: 0 6px;
+  }
 }
