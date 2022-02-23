@@ -131,3 +131,11 @@
     white-space: initial;
   }
 }
+
+/* ajustando o tamanho dos botões pois
+estava ficando muito grande nos estilos de mobile */
+@media (max-width: 50rem) {
+  .btn-home-receitas > a {
+    font-size: var(--size-4);
+  }
+}

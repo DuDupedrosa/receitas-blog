@@ -159,4 +159,8 @@
   .header-img {
     display: none;
   }
+
+  .header-content {
+    padding-bottom: 0;
+  }
 }
