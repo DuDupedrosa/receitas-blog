@@ -1,6 +1,7 @@
 export default function outsideClick(element, callback) {
   const getHtml = document.documentElement;
   const attributeOutside = "data-outside";
+  const events = ["touchstart", "click"];
 
   // verifica se o clique foi fora do element
   // caso tenha sido ele executa a function de callback
@@ -8,7 +9,9 @@ export default function outsideClick(element, callback) {
   function handleOutsideClick(event) {
     if (!element.contains(event.target)) {
       element.removeAttribute(attributeOutside, "");
-      getHtml.removeEventListener("click", handleOutsideClick);
+      events.forEach((eventos) => {
+        getHtml.removeEventListener(eventos, handleOutsideClick);
+      });
       callback();
     }
   }
@@ -18,6 +21,8 @@ export default function outsideClick(element, callback) {
   //  eventos adicionados a todo instante
   if (!element.hasAttribute(attributeOutside)) {
     element.setAttribute(attributeOutside, "");
-    getHtml.addEventListener("click", handleOutsideClick);
+    events.forEach((eventos) => {
+      getHtml.addEventListener(eventos, handleOutsideClick);
+    });
   }
 }
