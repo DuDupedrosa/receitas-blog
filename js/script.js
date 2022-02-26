@@ -2,6 +2,7 @@ import DropdownMenu from "./dropdown-menu.js";
 import ScrollSuave from "./scroll-suave.js";
 import ScrollAnima from "./scroll-anima.js";
 import MenuMobile from "./menu-mobile.js";
+import initLocalStorage from "./form-localStorage.js";
 
 const dropdown = new DropdownMenu("[data-dropdown]", "active");
 dropdown.init();
@@ -18,3 +19,5 @@ const menuMobile = new MenuMobile(
   "active-menu"
 );
 menuMobile.init();
+
+initLocalStorage();
