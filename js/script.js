@@ -4,6 +4,7 @@ import ScrollAnima from "./scroll-anima.js";
 import MenuMobile from "./menu-mobile.js";
 import initLocalStorage from "./form-localStorage.js";
 import RegexpForm from "./regexp-form.js";
+import AccordionList from "./accordion-list.js";
 
 const dropdown = new DropdownMenu("[data-dropdown]", "active");
 dropdown.init();
@@ -34,3 +35,10 @@ const regexpForm = new RegexpForm(
   "active-span"
 );
 regexpForm.init();
+
+const accordionList = new AccordionList(
+  '[data-accordion="title"]',
+  "active-list-title",
+  "active-list"
+);
+accordionList.init();
