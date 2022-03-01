@@ -3,6 +3,7 @@ import ScrollSuave from "./scroll-suave.js";
 import ScrollAnima from "./scroll-anima.js";
 import MenuMobile from "./menu-mobile.js";
 import initLocalStorage from "./form-localStorage.js";
+import RegexpForm from "./regexp-form.js";
 
 const dropdown = new DropdownMenu("[data-dropdown]", "active");
 dropdown.init();
@@ -20,4 +21,16 @@ const menuMobile = new MenuMobile(
 );
 menuMobile.init();
 
+// method criado específico para esse projeto
+// por isso colocamos em uma function e não
+// em uma classe
 initLocalStorage();
+
+const regexpForm = new RegexpForm(
+  "telefone",
+  ".tel",
+  "Digite um número válido",
+  "span-input-erro",
+  "active-span"
+);
+regexpForm.init();
