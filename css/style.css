@@ -31,3 +31,6 @@
 
 /* menu-mobile */
 @import url(./global/menu-mobile.css);
+
+/* regexp-number */
+@import url(./contato/regexp.css);
